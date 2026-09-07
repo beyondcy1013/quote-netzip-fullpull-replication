@@ -5,6 +5,11 @@ description: Govern the authenticated official 5188 full-push protocol shared by
 
 # Shared official full-push governance
 
+Published source suite:
+`https://github.com/beyondcy1013/netzip-fullpull-suite`.
+Published Skill:
+`https://github.com/beyondcy1013/quote-netzip-fullpull-replication`.
+
 ## Authority
 
 - Resolve the shared implementation from the current consumer's
