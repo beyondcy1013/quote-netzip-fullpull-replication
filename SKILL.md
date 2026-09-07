@@ -15,6 +15,14 @@ Published Skill:
 - Resolve the shared implementation from the current consumer's
   `netzip-fullpull` Cargo path dependency. Do not assume a host-absolute path;
   the workspace may be mounted through Samba or SSHFS.
+- The authoritative project-level Skill is stored with that crate at
+  `.agents/skills/quote-netzip-rs-fullpull-replication/SKILL.md`. Install a
+  complete mirrored copy at the same `.agents/skills/...` path in every direct
+  product repository so project-scoped agents and Samba-mounted workspaces can
+  load it. An empty directory or symlink is not an installation.
+- After editing the authoritative Skill, copy the complete file to
+  `quoteNetzipRs` and `netzip_win`, run the user-level multi-agent sync, and
+  require identical SHA256 values for every mirror before finishing.
 - From that resolved crate, read `docs/STATUS.md`, `PROTOCOL.md`, `EVIDENCE_INDEX.md`,
   `HYPOTHESES.md`, `ACCEPTANCE.md`, and `GITHUB_RELEASE.md` first.
 - Protocol facts, decoder gaps, fixtures, and acceptance state belong there.
