@@ -21,6 +21,29 @@ Published Skill:
 - Product runtime/API/deployment facts remain in the consuming project.
 - Project `progress.MD` files are journals, not protocol authority.
 
+## Documentation routing
+
+Write each result to exactly one authoritative destination:
+
+| Content | Authoritative file |
+|---|---|
+| Current shared protocol/decoder gap, owner, status, next gate | `netzip-fullpull/docs/STATUS.md` |
+| Independently confirmed wire, decoder, state, or projection rule | `netzip-fullpull/docs/PROTOCOL.md` |
+| Reusable capture, replay, tooling, account, timing, or diagnosis lesson | `netzip-fullpull/docs/EXPERIENCE.md` |
+| Fixture, pcap, disassembly, report path, scope, and SHA256 | `netzip-fullpull/docs/EVIDENCE_INDEX.md` |
+| Open explanation, falsifying test, or rejected hypothesis | `netzip-fullpull/docs/HYPOTHESES.md` |
+| Shared promotion criteria and direct-consumer verification | `netzip-fullpull/docs/ACCEPTANCE.md` |
+| Git repository inventory, commit/push procedure, and remote audit | `netzip-fullpull/docs/GITHUB_RELEASE.md` |
+| Linux runtime/API/shadow/publication/rollback detail | `quoteNetzipRs/docs/` |
+| Windows driver/GUI/service/build/deployment detail | `netzip_win/docs/` |
+| Chronological terminal activity before promotion | the owning project's `progress.MD` |
+
+Do not copy a shared gap or experience section into both product repositories.
+Product documents link the shared authority and contain only product-specific
+impact or acceptance. Promote a journal observation only after evidence review;
+until then keep it in diagnostics/progress and, when useful, as an explicit
+hypothesis rather than a protocol rule.
+
 ## Consumers
 
 Current direct consumers include `quoteNetzipRs`, `netzip_win` packages
